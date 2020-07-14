@@ -45,6 +45,8 @@ To see more information, please visit [my blog page](https://zhongruoyu.github.i
 
 I would like to express my sincere appreciation to those who have provided their matric numbers to me. Without their help, this could not have been possible.
 
+## Footnotes
+
 [^1]: [National Registration Identity Card - Wikipedia](https://en.wikipedia.org/wiki/National_Registration_Identity_Card)
 
 [^2]: [Fun with numbers](http://www.ngiam.net/NRIC/)
