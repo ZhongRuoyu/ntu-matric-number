@@ -4,7 +4,7 @@
 <html>
     <head>
         <title>NTU Matric Number Checksum Validator</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles.css" />
         <link
             href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -21,15 +21,33 @@
             />
             <h1>Matric Number Checksum Validator</h1>
         </header>
-        <input
-            id="input"
-            type="text"
-            placeholder="Enter matric number"
-            onkeyup="validate()"
-        />
+        <p>
+            <input
+                id="input"
+                type="text"
+                placeholder="Enter matric number"
+                onkeyup="validate()"
+            />
+        </p>
         <p id="result">Please enter a matric number.</p>
         <hr />
-        <p>More information available soon.</p>
+        <h2>Disclaimer</h2>
+        <p>
+            The algorithm for the checksum calculation is based on tests on a
+            number of NTU matriculation numbers, and has been verified with a
+            number of real cases. However, the results are not guaranteed to be
+            accurate. Please use them for reference only.
+        </p>
+        <p>
+            The results are known to be inaccurate for matriculation numbers
+            obtained in the early 2010s or earlier due to a change in the
+            algorithm.
+        </p>
+        <p>
+            Please see <a href="">here</a> for more information. <br />
+            (Link available soon)
+        </p>
+
         <hr />
         <footer id="about">
             <p>
