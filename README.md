@@ -18,7 +18,7 @@ That is the modulo 11 algorithm. It is a very common algorithm used to calculate
 Taking the above-mentioned matric number (`U2024197H`) as an example, the procedure for calculating the check digit using the modulo 11 algorithm is as follows:
 
 1. Put the 11 possible check digits in an ordered array `ALPHA[11]`: `ALPHA[11] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L'}`.
-2. Take out the digits in the matric number, namely `d0` to `d6`: `{2, 0, 2, 4, 1, 9, 7}`.
+2. Take out the numeric digits in the matric number, namely `d0` to `d6`: `{2, 0, 2, 4, 1, 9, 7}`.
 3. Multiply each digit with its corresponding weighting factor (`w0` to `w6`, discussed below), and add them together: `S = d0*w0 + d1*w1 + d2*w2 + d3*w3 + d4*w4 + d5*w5 + d6*w6`.
 4. Add an offset number `a`, which may be any integer from 0 to 10, to produce the offset sum `S_o`: `S_o = S + a`.
 5. Divide the offset sum `S_o` by 11, and get the remainder `R`: `R = S_o % 11`.
