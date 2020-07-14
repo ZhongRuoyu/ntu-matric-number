@@ -1,5 +1,5 @@
 function validate() {
-    function checksum(type, num) {
+    function checkdigit(type, num) {
         var WEIGHT = [0, 0, 0, 0, 0, 0, 0];
         var OFFSET = 0;
         var RESULTS = ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "ERROR"];
@@ -28,7 +28,7 @@ function validate() {
     var result = document.getElementById("result");
     var type;
     var num;
-    var checksum;
+    var checkdigit;
     while (input.value.substring(0, 1) == " ") {
         input.value = input.value.substring(1);
     }
@@ -47,14 +47,14 @@ function validate() {
     if (input.value.length == 8 && input.value.match(/^[A-Z]\d{7}/i)) {
         type = input.value.substring(0, 1).toUpperCase();
         num = parseInt(input.value.substring(1, 8));
-        result.innerHTML = "The checksum letter is " + checksum(type, num) + ".";
+        result.innerHTML = "The check digit is " + checkdigit(type, num) + ".";
         return;
     }
     if (input.value.match(/^[A-Z]\d{7}[ABCDEFGHJKL]/i)) {
         type = input.value.substring(0, 1).toUpperCase();
         num = parseInt(input.value.substring(1, 8));
         check = input.value.substring(8, 9).toUpperCase();
-        if (check == checksum(type, num)) {
+        if (check == checkdigit(type, num)) {
             result.innerHTML = input.value.toUpperCase() + " is a valid matric number.";
         } else {
             result.innerHTML = input.value.toUpperCase() + " is not a valid matric number. Please check your input.";
