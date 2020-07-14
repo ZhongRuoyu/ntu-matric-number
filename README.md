@@ -1,5 +1,11 @@
 # The Checksum Algorithm for NTU Matriculation Numbers
 
+## Quick Navigation
+
+* [Matric Number Checksum Validator](https://zhongruoyu.github.io/ntu-matric-number/)
+* [Reverse Engineering Program (in C)](https://github.com/ZhongRuoyu/ntu-matric-number/blob/master/calculation/ntu_matric.c)
+* [Blog Post](https://zhongruoyu.github.io/projects/2020-07/ntu-matric-number/)
+
 ## The Modulo 11 Algorithm
 
 The pattern of NTU matric numbers (e.g. `U2024197H`) is similar to that of the Singapore NRIC number / FIN[^1], so it is reasonable to guess that the algorithm for the checksum of our matric numbers also shares the same pattern with that of the NRIC number / FIN[^2]. That is the modulo 11 algorithm. It is a very common algorithm used to calculate check digits.
@@ -39,7 +45,7 @@ The algorithm for the checksum calculation is based on studies on a number of NT
 
 ## About
 
-To see more information, please visit [my blog page](https://zhongruoyu.github.io/projects/2020-07/ntu-matric-number/).
+For more information about the discovery, please visit [my blog page](https://zhongruoyu.github.io/projects/2020-07/ntu-matric-number/).
 
 ## Acknowledgement
 
