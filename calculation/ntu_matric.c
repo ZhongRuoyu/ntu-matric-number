@@ -1,7 +1,7 @@
 /* Copyright (c) 2020 Zhong Ruoyu */
 /* This program uses a number of actual data sets to reverse-engineer the algorithm 
- * for calculating the checksum of NTU matriculation numbers. To find more, visit 
- * https://github.com/ZhongRuoyu/NTU-Matric-Number */
+ * for calculating the checksum of NTU matriculation numbers. To find out more, 
+ * visit https://github.com/ZhongRuoyu/ntu-matric-number */
 
 #include <stdio.h>
 
@@ -24,7 +24,7 @@ const struct matric SAMPLES[SAMPLECOUNT] = {
 };
 
 int validate(int *, int);
-int weightedsum(int, int*);
+int weightedsum(int, int *);
 
 const char ALPHA[11] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L'};
 
