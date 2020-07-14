@@ -16,11 +16,15 @@ struct matric {char type; int num; char code;};
 
 const struct matric SAMPLES[SAMPLECOUNT] = {
     /* For privacy concerns, only sample data is displayed.
-     * To actually calculate the results, replace the sample data sets with actual ones. */
-    {'U', 1813141, 'E'}, {'U', 1825926, 'E'}, {'U', 1835358, 'C'}, {'U', 1849793, 'L'}, {'U', 1912384, 'A'},
-    {'U', 1926264, 'B'}, {'U', 1933383, 'K'}, {'U', 1942795, 'A'}, {'U', 2010288, 'D'}, {'U', 2024197, 'H'},
-    {'U', 2031693, 'B'}, {'U', 2049937, 'H'},
-    {0} // If SAMPLECOUNT > actual number of sample data sets, ending with {0} tells the program to stop here.
+     * To actually calculate the results, replace the sample data sets with actual ones.
+     * Example: For U1813141E, type in {'U', 1813141, 'E'}. */
+    {'U', 1813141, 'E'}, {'U', 1825926, 'E'}, {'U', 1835358, 'C'},
+    {'U', 1849793, 'L'}, {'U', 1912384, 'A'}, {'U', 1926264, 'B'},
+    {'U', 1933383, 'K'}, {'U', 1942795, 'A'}, {'U', 2010288, 'D'},
+    {'U', 2024197, 'H'}, {'U', 2031693, 'B'}, {'U', 2049937, 'H'},
+    {0}
+    /* If SAMPLECOUNT > actual number of sample data sets, 
+     * ending with {0} can also tell the program to stop here. */
 };
 
 int validate(int *, int);
@@ -37,31 +41,26 @@ int main(void)
     printf("Calculating...\n\n");
     // For shorter output, use the following line instead.
     // printf("Set #\tw[0]\tw[1]\tw[2]\tw[3]\tw[4]\tw[5]\tw[6]\toffset\n");
-    for (w[0] = MIN; w[0] <= MAX; w[0]++) {
-        for (w[1] = MIN; w[1] <= MAX; w[1]++) {
-            for (w[2] = MIN; w[2] <= MAX; w[2]++) {
-                for (w[3] = MIN; w[3] <= MAX; w[3]++) {
-                    for (w[4] = MIN; w[4] <= MAX; w[4]++) {
-                        for (w[5] = MIN; w[5] <= MAX; w[5]++) {
-                            for (w[6] = MIN; w[6] <= MAX; w[6]++) {
-                                for (offset = OFFMIN; offset <= OFFMAX; offset++) {
-                                    tryCount++;
-                                    if (validate(w, offset)) {
-                                        printf("Try #%d: Set #%d found.\n", tryCount, ++resultCount);
-                                        printf("w[0]\tw[1]\tw[2]\tw[3]\tw[4]\tw[5]\tw[6]\toffset\n");
-                                        printf("%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\n\n", w[0], w[1], w[2], w[3], w[4], w[5], w[6], offset);
-                                        printf("Still calculating...\n");
-                                        // For shorter output, use the following line instead.
-                                        // printf("#%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\n", ++resultCount, w[0], w[1], w[2], w[3], w[4], w[5], w[6], offset);
-                                    };
-                                }
-                            }
-                        }
-                    }
-                }
+    for (w[0] = MIN; w[0] <= MAX; w[0]++) 
+     for (w[1] = MIN; w[1] <= MAX; w[1]++) 
+      for (w[2] = MIN; w[2] <= MAX; w[2]++) 
+       for (w[3] = MIN; w[3] <= MAX; w[3]++) 
+        for (w[4] = MIN; w[4] <= MAX; w[4]++) 
+         for (w[5] = MIN; w[5] <= MAX; w[5]++) 
+          for (w[6] = MIN; w[6] <= MAX; w[6]++) 
+            for (offset = OFFMIN; offset <= OFFMAX; offset++) {
+                tryCount++;
+                if (validate(w, offset)) {
+                    printf("Try #%d: Set #%d found.\n", tryCount, ++resultCount);
+                    printf("w[0]\tw[1]\tw[2]\tw[3]\tw[4]\tw[5]\tw[6]\toffset\n");
+                    printf("%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\n\n", 
+                        w[0], w[1], w[2], w[3], w[4], w[5], w[6], offset);
+                    printf("Still calculating...\n");
+                    // For shorter output, use the following line instead.
+                    /* printf("#%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\n",
+                        ++resultCount, w[0], w[1], w[2], w[3], w[4], w[5], w[6], offset); */
+                };
             }
-        }
-    }
     printf("\nCalculation finished. %d sets found in %d tries.\n\n", resultCount, tryCount);
 
     return 0;
@@ -69,8 +68,7 @@ int main(void)
 
 int validate(int *w, int offset)
 {
-    int sum;
-    int remainder;
+    int sum, remainder;
     for (int i = 0; i < SAMPLECOUNT; i++) {
         if (SAMPLES[i].type == 0) return 1;
         sum = weightedsum(SAMPLES[i].num, w) + offset;
