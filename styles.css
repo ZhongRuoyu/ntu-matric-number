@@ -53,7 +53,7 @@ input {
     font-size: 1em;
     font-family: "Noto Sans", sans-serif;
 }
-input[type="text"] {
-    width: 50%;
+[id="input"]input[type="text"] {
+    width: 36%;
     min-width: 200px;
 }
