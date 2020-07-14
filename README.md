@@ -23,7 +23,7 @@ Due to the limitations of sample data, only matric numbers starting with '`U`' o
   |`w0`|`w1`|`w2`|`w3`|`w4`|`w5`|`w6`|`a`|
   |----|----|----|----|----|----|----|---|
   |10  |7   |4   |3   |2   |9   |8   |0  |
-* Due to the limitations of sample data, matric numbers starting with '`U`' and obtained in 2017 have not been studied. The data set should be either above or below.
+* Due to the limitations of sample data, matric numbers starting with '`U`' and obtained in 2017 have not been studied. The data set should be the same as either above or below.
 * For matric numbers starting with '`U`', obtained after (and including) 2018:
   |`w0`|`w1`|`w2`|`w3`|`w4`|`w5`|`w6`|`a`|
   |----|----|----|----|----|----|----|---|
