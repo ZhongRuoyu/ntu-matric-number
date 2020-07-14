@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Matric Number Checksum Validator</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="scripts/ntu_matric.js"></script>
+    </head>
+    <body>
+        <header>
+            <img
+                src="assets/NTU.svg"
+                alt="Nanyang Technological University, Singapore"
+                class="titleImage"
+            />
+            <h1>Matric Number Checksum Validator</h1>
+        </header>
+        <input
+            id="input"
+            type="text"
+            placeholder="Enter matric number"
+            onkeyup="validate()"
+        />
+        <p><span id="result">Please enter a matric number.</span></p>
+        <hr />
+        <p>More information available soon.</p>
+        <hr />
+        <footer id="about">
+            <p>
+                Copyright © 2020 Zhong Ruoyu
+            </p>
+        </footer>
+    </body>
+</html>
