@@ -1,14 +1,19 @@
-# The Checksum Algorithm for NTU Matriculation Numbers
+# The Check Digit Algorithm for NTU Matriculation Numbers
 
 ## Quick Navigation
 
-* [Matric Number Checksum Validator](https://zhongruoyu.github.io/ntu-matric-number/)
+* [Matric Number Check Digit Validator](https://zhongruoyu.github.io/ntu-matric-number/)
 * [Reverse Engineering Program (in C)](https://github.com/ZhongRuoyu/ntu-matric-number/blob/master/calculation/ntu_matric.c)
 * [Blog Post](https://zhongruoyu.github.io/projects/2020-07/ntu-matric-number/)
 
 ## The Modulo 11 Algorithm
 
-The pattern of NTU matric numbers (e.g. `U2024197H`) is similar to that of the Singapore NRIC number / FIN[^1], so it is reasonable to guess that the algorithm for the checksum of our matric numbers also shares the same pattern with that of the NRIC number / FIN[^2]. That is the modulo 11 algorithm. It is a very common algorithm used to calculate check digits.
+It is reasonable to guess that the check digit algorithm for our matric numbers shares the same pattern with that of the NRIC number / FIN, based on the following facts:
+
+* The pattern of NTU matric numbers (e.g. `U2024197H`) is similar to that of the Singapore NRIC number / FIN[^1];
+* On observing dozens of data, it can be noticed that the check digit ranges from `A` to `L` excluding `I`, and that is a total of 11 possibilities. The case is the same for the NRIC number / FIN [^2].
+
+That is the modulo 11 algorithm. It is a very common algorithm used to calculate check digits.
 
 Taking the above-mentioned matric number (`U2024197H`) as an example, the procedure for calculating the check digit using the modulo 11 algorithm is as follows:
 
@@ -47,7 +52,7 @@ For more information about the discovery, please visit [my blog page](https://zh
 
 This repository (ZhongRuoyu/ntu-matric-number) is licensed under the [MIT License](https://github.com/ZhongRuoyu/ntu-matric-number/blob/master/LICENSE).
 
-The algorithm for the checksum calculation is based on studies on a number of NTU matriculation numbers, and has been verified with a number of real cases. However, the results are not guaranteed to be accurate. Since the algorithm only calculates the checksum of matriculation numbers, it is also not guaranteed that the numbers that pass the validation actually exist. Please use it for reference only.
+The check digit algorithm is based on a study on a number of NTU matriculation numbers, and has been verified with a number of real cases. However, the results are not guaranteed to be accurate. Since the algorithm only calculates the check digit of matriculation numbers, it is also not guaranteed that the numbers that pass the validation actually exist. Please use it for reference only.
 
 The above-mentioned algorithm, if exists, belongs to Nanyang Technological University, Singapore.
 
