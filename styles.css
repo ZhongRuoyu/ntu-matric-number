@@ -1,5 +1,6 @@
 body {
     width: 80%;
+    min-width: 400px;
     max-width: 960px;
     margin: auto;
     font-family: "Noto Sans", sans-serif;
@@ -27,6 +28,7 @@ img {
 }
 img.titleImage {
     width: 40%;
+    min-width: 200px;
     max-width: 576px;
     margin-top: 5%;
 }
@@ -53,4 +55,5 @@ input {
 }
 input[type="text"] {
     width: 50%;
+    min-width: 200px;
 }
