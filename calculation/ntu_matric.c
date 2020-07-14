@@ -1,7 +1,9 @@
 /* Copyright (c) 2020 Zhong Ruoyu */
 /* This program uses a number of actual data sets to reverse-engineer the algorithm 
  * for calculating the checksum of NTU matriculation numbers. To find out more, 
- * visit https://github.com/ZhongRuoyu/ntu-matric-number */
+ * visit https://github.com/ZhongRuoyu/ntu-matric-number.
+ * To do the validation using the calculated set of data, visit 
+ * https://zhongruoyu.github.io/ntu-matric-number/. */
 
 #include <stdio.h>
 
