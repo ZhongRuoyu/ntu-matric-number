@@ -61,6 +61,6 @@ I would like to express my sincere appreciation to those who have provided their
 
 [^2]: [Fun with numbers](http://www.ngiam.net/NRIC/)
 
-[^3]: For privacy concerns, the actual data that I used have been removed, and only sample data is displayed. Nevertheless, the sample data provided in the source code can also lead to that only result. The example `U2024197H` used here is also a sample; it is not intentionally linked to any one.
+[^3]: For privacy concerns, the actual data that I used have been removed, and only sample data is displayed. Nevertheless, the sample data provided in the source code can also lead to that only result. The example `U2024197H` used here is also a sample; it is not intentionally linked to anyone.
 
 [^4]: [Daniel D. Zhang - The Secret behind NTU Matriculation Numbers](https://github.com/idf/idf.github.io-deprecated/blob/master/_posts/2014-03-17-the-secret-behind-ntu-matriculation-numbers.md)
