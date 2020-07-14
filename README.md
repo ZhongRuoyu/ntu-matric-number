@@ -39,13 +39,17 @@ Due to the limitations of sample data, only matric numbers starting with '`U`' o
   |----|----|----|----|----|----|----|---|
   |10  |7   |4   |3   |2   |9   |8   |9  |
 
-## Disclaimer
-
-The algorithm for the checksum calculation is based on studies on a number of NTU matriculation numbers, and has been verified with a number of real cases. However, the results are not guaranteed to be accurate. Since the algorithm only calculates the checksum of matriculation numbers, it is also not guaranteed that the numbers that pass the validation actually exist. Please use it for reference only.
-
 ## About
 
 For more information about the discovery, please visit [my blog page](https://zhongruoyu.github.io/projects/2020-07/ntu-matric-number/).
+
+## License & Disclaimer
+
+This repository (ZhongRuoyu/ntu-matric-number) is licensed under the [MIT License](https://github.com/ZhongRuoyu/ntu-matric-number/blob/master/LICENSE).
+
+The algorithm for the checksum calculation is based on studies on a number of NTU matriculation numbers, and has been verified with a number of real cases. However, the results are not guaranteed to be accurate. Since the algorithm only calculates the checksum of matriculation numbers, it is also not guaranteed that the numbers that pass the validation actually exist. Please use it for reference only.
+
+The above-mentioned algorithm, if exists, belongs to Nanyang Technological University, Singapore.
 
 ## Acknowledgement
 
