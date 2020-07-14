@@ -2,7 +2,7 @@ body {
     width: 80%;
     max-width: 960px;
     margin: auto;
-    font-family: "Noto Serif", serif;
+    font-family: "Noto Sans", sans-serif;
     text-align: center;
 }
 body {
@@ -34,6 +34,9 @@ img.titleImage {
 p {
     line-height: 1.5rem;
 }
+p#result {
+    height: 3rem;
+}
 
 a {
     color: #1e1e1e;
@@ -46,9 +49,8 @@ hr {
 input {
     height: 2em;
     font-size: 1em;
-    font-family: "Noto Serif", serif;
+    font-family: "Noto Sans", sans-serif;
 }
 input[type="text"] {
     width: 50%;
 }
-
