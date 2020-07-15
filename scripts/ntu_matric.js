@@ -1,5 +1,5 @@
 function validate() {
-    function checkdigit(type, num) {
+    function checkdigit(type, year, num) {
         var WEIGHT = [0, 0, 0, 0, 0, 0, 0];
         var OFFSET = 0;
         var RESULTS = ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "ERROR"];
@@ -7,8 +7,13 @@ function validate() {
         var remainder = 11;
         switch (type) {
             case "U":
-                WEIGHT = [6, 7, 4, 3, 8, 9, 2];
-                OFFSET = 4;
+                if (year >= 17) { // Not sure here. More sample data needed.
+                    WEIGHT = [6, 7, 4, 3, 8, 9, 2];
+                    OFFSET = 4;
+                } else {
+                    WEIGHT = [10, 7, 4, 3, 2, 9, 8];
+                    OFFSET = 0;
+                }
                 break;
             case "B":
                 WEIGHT = [10, 7, 4, 3, 2, 9, 8];
@@ -26,12 +31,10 @@ function validate() {
 
     var input = document.getElementById("input");
     var result = document.getElementById("result");
-    var type;
-    var num;
-    var checkdigit;
+    var type, year, num, checkdigit;
     while (input.value.substring(0, 1) == " ") {
         input.value = input.value.substring(1);
-    }
+    } // Discards spaces at the front
     if (input.value.length && !input.value.match(/^[BU]/i)) {
         result.innerHTML =
             "Only numbers starting with B or U are supported at the moment.";
@@ -46,15 +49,17 @@ function validate() {
     }
     if (input.value.length == 8 && input.value.match(/^[A-Z]\d{7}/i)) {
         type = input.value.substring(0, 1).toUpperCase();
+        year = parseInt(input.value.substring(1, 3));
         num = parseInt(input.value.substring(1, 8));
-        result.innerHTML = "The check digit is " + checkdigit(type, num) + ".";
+        result.innerHTML = "The check digit is " + checkdigit(type, year, num) + ".";
         return;
     }
     if (input.value.match(/^[A-Z]\d{7}[ABCDEFGHJKL]/i)) {
         type = input.value.substring(0, 1).toUpperCase();
+        year = parseInt(input.value.substring(1, 3));
         num = parseInt(input.value.substring(1, 8));
         check = input.value.substring(8, 9).toUpperCase();
-        if (check == checkdigit(type, num)) {
+        if (check == checkdigit(type, year, num)) {
             result.innerHTML = input.value.toUpperCase() + " is a valid matric number.";
         } else {
             result.innerHTML = input.value.toUpperCase() + " is not a valid matric number. Please check your input.";
