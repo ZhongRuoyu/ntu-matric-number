@@ -7,7 +7,7 @@ function validate() {
         var remainder = 11;
         switch (type) {
             case "U":
-                if (year >= 17) { // Not sure here. More sample data needed.
+                if (year >= 17) { // *
                     WEIGHT = [6, 7, 4, 3, 8, 9, 2];
                     OFFSET = 4;
                 } else {
