@@ -28,7 +28,7 @@ Taking the above-mentioned matric number (`U2024197H`) as an example, the proced
 
 [Reverse engineering](https://github.com/ZhongRuoyu/ntu-matric-number/blob/master/calculation/ntu_matric.c)[^3] has shown that the matric numbers are indeed using the modulo 11 algorithm.
 
-Due to the limitations of sample data, only matric numbers starting with '`U`' or '`B`' are studied.
+Due to the limitations of the sample data, only matric numbers starting with '`U`' or '`B`' are studied.
 
 * For matric numbers starting with '`U`', obtained before (and including) 2016[^4]:
   |`w0`|`w1`|`w2`|`w3`|`w4`|`w5`|`w6`|`a`|
