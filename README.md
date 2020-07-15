@@ -8,7 +8,7 @@
 
 ## The Modulo 11 Algorithm
 
-It is reasonable to guess that the check digit algorithm for our matric numbers shares the same pattern with that of the NRIC number / FIN, based on the following facts:
+It is reasonable to guess that the check digit algorithm for our matric numbers shares the same pattern with that for the NRIC number / FIN, based on the following facts:
 
 * The pattern of NTU matric numbers (e.g. `U2024197H`) is similar to that of the Singapore NRIC number / FIN[^1];
 * On observing dozens of data, it can be noticed that the check digit ranges from `A` to `L` excluding `I`, and that is a total of 11 possibilities. The case is the same for the NRIC number / FIN[^2].
