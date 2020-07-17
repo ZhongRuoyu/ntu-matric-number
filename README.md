@@ -4,7 +4,7 @@
 
 * [Matric Number Check Digit Validator](https://zhongruoyu.github.io/ntu-matric-number/)
 * [Reverse Engineering Program (in C)](https://github.com/ZhongRuoyu/ntu-matric-number/blob/master/calculation/ntu_matric.c)
-* [Blog Post](https://zhongruoyu.github.io/projects/2020-07/ntu-matric-number/)
+* [Blog Post](https://ruoyu.xyz/projects/2020-07/ntu-matric-number/)
 
 ## The Modulo 11 Algorithm
 
@@ -46,7 +46,7 @@ Due to the limitations of the sample data, only matric numbers starting with '`U
 
 ## About
 
-For more information about the discovery, please visit [my blog page](https://zhongruoyu.github.io/projects/2020-07/ntu-matric-number/).
+For more information about the discovery, please visit [my blog page](https://ruoyu.xyz/projects/2020-07/ntu-matric-number/).
 
 ## License & Disclaimer
 
