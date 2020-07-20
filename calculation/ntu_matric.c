@@ -61,7 +61,7 @@ int main(void)
                     // For shorter output, use the following line instead.
                     /* printf("#%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\n",
                         ++resultCount, w[0], w[1], w[2], w[3], w[4], w[5], w[6], offset); */
-                };
+                }
             }
     printf("\nCalculation finished. %d sets found in %d tries.\n\n", resultCount, tryCount);
 
