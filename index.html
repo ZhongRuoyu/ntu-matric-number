@@ -2,98 +2,65 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>NTU Matric Number Validator</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="icon"
-            type="image/png"
-            href="assets/favicons/favicon-32.png"
-            sizes="32x32"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            href="assets/favicons/favicon-128.png"
-            sizes="128x128"
-        />
-        <link rel="stylesheet" href="assets/style.css" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-            rel="stylesheet"
-        />
-        <script src="scripts/ntu_matric.js"></script>
-    </head>
-    <body>
-        <header>
-            <img
-                src="assets/NTU.svg"
-                alt="Nanyang Technological University, Singapore"
-                class="titleImage"
-            />
-            <h1>Matric Number Validator</h1>
-        </header>
-        <p>
-            <input
-                id="input"
-                type="text"
-                placeholder="Enter a matric number"
-                onkeyup="validate()"
-            />
-        </p>
-        <p id="result">Please enter a matric number.</p>
-        <hr />
-        <h2>Disclaimer</h2>
-        <p>
-            The check digit algorithm is based on a study on a number of NTU
-            matriculation numbers, and has been verified with a number of real
-            cases. However, the results are not guaranteed to be accurate. Since
-            the algorithm only calculates the check digit of matriculation
-            numbers, it is also not guaranteed that the numbers that pass the
-            validation actually exist. Please use it for reference only.
-        </p>
-        <p>
-            If inaccurate result is displayed, please provide feedback
-            <a
-                href="https://github.com/ZhongRuoyu/ntu-matric-number/issues"
-                target="_blank"
-                >here</a
-            >.
-        </p>
-        <h2>About</h2>
-        <p>
-            Please see
-            <a
-                href="https://zhongruoyu.github.io/projects/2020-07/ntu-matric-number/"
-                target="_blank"
-                >here</a
-            >
-            for more information about the algorithm.
-        </p>
 
-        <hr />
-        <footer id="about">
-            <p>
-                Copyright © 2020 Zhong Ruoyu
-            </p>
-            <p>
-                The above-mentioned algorithm, if exists, belongs to Nanyang
-                Technological University, Singapore (NTU).
-                <br />
-                The logo and the title image used in this site belong to NTU.
-                They are used to identify the organization, a subject of public
-                interest. The significance of the logo is to help the visitors
-                identify the organization, and to assure the visitors that they
-                have reached the right webpage containing information about the
-                organization.
-            </p>
-            <p>
-                <a
-                    href="https://github.com/ZhongRuoyu/ntu-matric-number/issues"
-                    target="_blank"
-                    >Feedback</a
-                >
-            </p>
-        </footer>
-    </body>
+  <head>
+    <title>NTU Matric Number Validator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-128.png" sizes="128x128" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet" />
+    <script src="scripts/ntu_matric.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <img src="assets/NTU.svg" alt="Nanyang Technological University, Singapore" class="titleImage" />
+      <h1>Matric Number Validator</h1>
+    </header>
+    <p><input id="input" type="text" placeholder="Enter a matric number" onkeyup="validate()" /></p>
+    <p id="result">Please enter a matric number.</p>
+    <hr />
+    <h2>Disclaimer</h2>
+    <p>
+      The check digit algorithm is based on a study on a number of NTU
+      matriculation numbers, and has been verified with a number of real
+      cases. However, the results are not guaranteed to be accurate. Since
+      the algorithm only calculates the check digit of matriculation
+      numbers, it is also not guaranteed that the numbers that pass the
+      validation actually exist. Please use it for reference only.
+    </p>
+    <p>
+      If inaccurate result is displayed, please provide feedback
+      <a href="https://github.com/ZhongRuoyu/ntu-matric-number/issues" target="_blank">here</a>.
+    </p>
+    <h2>About</h2>
+    <p>
+      Please see
+      <a href="https://zhongruoyu.github.io/projects/2020-07/ntu-matric-number/" target="_blank">here</a>
+      for more information about the algorithm.
+    </p>
+    <hr />
+    <footer id="about">
+      <p>
+        Copyright © 2020 Zhong Ruoyu
+      </p>
+      <p>
+        The above-mentioned algorithm, if exists, belongs to Nanyang
+        Technological University, Singapore (NTU).
+        <br />
+        The logo and the title image used in this site belong to NTU.
+        They are used to identify the organization, a subject of public
+        interest. The significance of the logo is to help the visitors
+        identify the organization, and to assure the visitors that they
+        have reached the right webpage containing information about the
+        organization.
+      </p>
+      <p>
+        <a href="https://github.com/ZhongRuoyu/ntu-matric-number/issues" target="_blank">Feedback</a>
+      </p>
+    </footer>
+  </body>
+
 </html>
