@@ -3,8 +3,8 @@
 ## Quick Navigation
 
 * [Matric Number Check Digit Validator](https://zhongruoyu.github.io/ntu-matric-number/)
-* [Reverse Engineering Program (in C)](https://github.com/ZhongRuoyu/ntu-matric-number/blob/master/calculation/ntu_matric.c)
-* [Blog Post](https://ruoyu.xyz/projects/2020-07/ntu-matric-number/)
+* [Reverse Engineering Program (in C)](/src/ntu_matric.c)
+* [Blog Post](https://www.ruoyu.xyz/projects/2020-07/ntu-matric-number/)
 
 ## The Modulo 11 Algorithm
 
@@ -26,7 +26,7 @@ Taking the above-mentioned matric number (`U2024197H`) as an example, the proced
 
 ## The Weighting Coefficients and the Offset Number
 
-[Reverse engineering](https://github.com/ZhongRuoyu/ntu-matric-number/blob/master/calculation/ntu_matric.c)[^3] has shown that the matric numbers are indeed using the modulo 11 algorithm.
+[Reverse engineering](/src/ntu_matric.c)[^3] has shown that the matric numbers are indeed using the modulo 11 algorithm.
 
 Due to the limitations of the sample data, only matric numbers starting with '`U`' or '`B`' are studied.
 
@@ -46,11 +46,11 @@ Due to the limitations of the sample data, only matric numbers starting with '`U
 
 ## About
 
-For more information about the discovery, please visit [my blog page](https://ruoyu.xyz/projects/2020-07/ntu-matric-number/).
+For more information about the discovery, please visit [my blog page](https://www.ruoyu.xyz/projects/2020-07/ntu-matric-number/).
 
 ## License & Disclaimer
 
-This repository (ZhongRuoyu/ntu-matric-number) is licensed under the [MIT License](https://github.com/ZhongRuoyu/ntu-matric-number/blob/master/LICENSE).
+This repository (ZhongRuoyu/ntu-matric-number) is licensed under the [MIT License](/LICENCE).
 
 The check digit algorithm is based on a study on a number of NTU matriculation numbers, and has been verified with a number of real cases. However, the results are not guaranteed to be accurate. Since the algorithm only calculates the check digit of matriculation numbers, it is also not guaranteed that the numbers that pass the validation actually exist. Please use it for reference only.
 
